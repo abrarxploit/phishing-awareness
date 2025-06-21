@@ -24,14 +24,10 @@ This project is a static phishing simulation built to educate users on online sc
 ## 📁 Project Structure
 
 ```
-Phishing-awareness-campaign/
-├── public/
-│   ├── index.html       # Final deployed phishing simulation
-│   └── thanks.html      # Awareness page shown after redirect
-├── source-code/
-│   ├── index.html       # Editable source code
-│   └── thanks.html      # Editable source code
-├── README.md
+Phishing-awareness-campaign
+├── index.html       # Final deployed phishing simulation + Editable source code
+└── thanks.html      # Awareness page shown after redirect + Editable source code
+├── README.me
 ```
 
 ---
