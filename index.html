@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Govt ₹5000 Scheme Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f2f6f9;
+    }
+    .header {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .header img {
+      height: 60px;
+    }
+    .header h1 {
+      margin: 10px 0 0;
+      font-size: 20px;
+      color: #333;
+    }
+    .banner {
+      background: #fff799;
+      padding: 15px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 17px;
+      color: #000;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    label {
+      margin-top: 10px;
+      display: block;
+      font-weight: 600;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      font-weight: bold;
+      margin-top: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="Emblem">
+    <h1>Ministry of Digital Welfare</h1>
+  </div>
+
+  <div class="banner">
+    📰 Govt Announces ₹5000 Relief Scheme – Limited Applications! Apply Now
+  </div>
+
+  <div class="form-container">
+    <form id="phishForm">
+      <label>Full Name</label>
+      <input type="text" name="fullname" required>
+      <label>City/State</label>
+      <input type="text" name="city" required>
+      <label>WhatsApp Number</label>
+      <input type="text" name="whatsapp" required>
+      <label>Age Group</label>
+      <select name="age" required>
+        <option disabled selected>Choose your age</option>
+        <option>Under 18</option>
+        <option>18–30</option>
+        <option>31–45</option>
+        <option>46–60</option>
+        <option>60+</option>
+      </select>
+      <label>Email</label>
+      <input type="email" name="email" required>
+      <button type="submit">Submit Application</button>
+    </form>
+    <div class="footer">
+      ⚠️ Submission closes June 30. Don’t miss out!
+    </div>
+  </div>
+  <script>
+    document.getElementById("phishForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      window.location.href = "thanks.html";
+    });
+  </script>
+</body>
+</html>
